@@ -1,0 +1,22 @@
+@charset "UTF-8";
+
+/* Theme Name: Ecologic: Ecology & Culture Theme
+Description: Custom built theme for Ecologic: Ecology & Culture in 2015
+Version: 1.0
+Author: Sam Ewald
+Author URI: http://www.samewald.com */
+
+/* CSS Resets */
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+ol, ul {
+	list-style: none;
+}
