@@ -20,3 +20,87 @@ Author URI: http://www.samewald.com */
 ol, ul {
 	list-style: none;
 }
+
+/* Global */
+
+html {
+	width: 100%;
+}
+
+body {
+	max-width: 980px;
+	margin: auto;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.1em;
+}
+
+/* Header, Nav */
+a.logo img {
+	width: 100%;
+	height: auto;
+}
+
+/* Spotlight, Recent */
+div#spotlight-image img, div.recent-image img {
+	width: 100%;
+	height: auto;
+}
+
+/* Tablet, Desktop */
+@media only screen and (min-width: 601px) 
+	and (min-device-width: 601px) {
+	/* Header, Nav */
+	a.logo {
+		text-decoration: none;
+	}
+	
+	a.logo img {
+		height: 180px;
+		width: auto;
+		display: inline-block;
+	}
+
+	div.menu {
+		display: inline-block;
+	}
+	
+	/* Spotlight, Recent */
+	div#spotlight-image {
+		width: 50%;
+		float: left;
+	}
+	
+	div#spotlight-desc {
+		width: 50%;
+		float: right;
+	}
+	
+	div#rec-wrapper {
+		width: 75%;
+		float: left;
+	}
+		div.recent-image {
+			width: 44%;
+			float: left;
+		}
+		
+		div.recent-desc {
+			width: 55%;
+			float: right;
+		}
+	
+	div#sidebar {
+		width: 25%;
+		float: right;
+	}
+}
