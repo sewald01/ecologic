@@ -100,14 +100,19 @@ input[type=submit] {
 /* Header, Nav */
 header {
 	background-color: rgba(255,255,255,0.7);
+	padding-bottom: 1px;
 }
 
 a.logo img {
 	width: 100%;
 	height: auto;
 	padding-top: 5px;
-	padding-left: 10px;
+	padding-left: 0px;
 	padding-right: 10px;
+}
+
+a.logo {
+	margin-right: 5px;
 }
 
 /* #menu-main-menu {
@@ -140,6 +145,7 @@ ul#menu-main-menu li {
 	margin-left: 10px;
 	margin-right: 10px;
 	background-color: #008000;
+	margin-bottom: 10px;
 }
 
 #menu-main-title a {
@@ -150,11 +156,26 @@ ul#menu-main-menu li {
 	display: none;
 }
 
-/* #menu-main-title a span.icon {
+.icon img{
 	float: right;
 }
 
-#menu-main .menu-main-menu-container {
+/* #menu-main-menu {
+	width: 100%;
+} */
+
+#menu-main-menu li {
+	/* width: 100%; */
+	background-color: #008000;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+/* #menu-main-menu li a {
+	width: 100%;
+} */
+
+/* #menu-main .menu-main-menu-container {
 	display: none;
 	} */
 	
@@ -171,6 +192,10 @@ div#spotlight-image-chpd, div#spotlight-desc-chpd, div.recent-image-chpd, div.re
 
 div#spotlight-desc-chpd, div.recent-desc-chpd {
 	padding-top: 10px;
+}
+
+div#spotlight-desc-chpd {
+	padding-top: 15px;
 }
 
 #spotlight-image-chpd, .recent-image-chpd, #post-spotlight, .post-thumbnail {
@@ -366,6 +391,15 @@ ul#menu-footer-menu li {
 		padding-top: 5px;
 	}
 
+/* Tablet */
+@media screen and (min-width: 601px) and (max-width: 919px)
+	and (min-device-width: 601px) and (max-device-width: 919px) {
+		a .logo img {
+			margin-bottom: 15px;
+		}
+	}
+
+	
 /* Tablet, Desktop */
 @media only screen and (min-width: 601px) 
 	and (min-device-width: 601px) {
@@ -402,8 +436,9 @@ ul#menu-footer-menu li {
 		height: auto;
 		width: 33%;
 		display: inline-block;
-		margin-bottom: -9px;
+		margin-bottom: 10px;
 		padding-right: 0px;
+		padding-left: 10px;
 	}
 
 	ul#menu-main-menu {
@@ -496,3 +531,9 @@ ul#menu-footer-menu li {
 		padding-left: 25px;
 	}
 }
+/* Desktop */
+@media only screen and (min-width: 919px) 
+	and (min-device-width: 919px) {
+	a.logo img {
+		margin-bottom: -9px;
+	}

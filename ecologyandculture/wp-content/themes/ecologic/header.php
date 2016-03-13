@@ -29,7 +29,7 @@
 		<a href="<?php echo get_option('home'); ?>/" class="logo">
 			<img src="<?php bloginfo('template_directory'); ?>/images/ecologic-radio-logo.png" alt="Temporary Logo">
 		</a>
-		<span id="menu-main-title"><a href="#">Menu<span class="icon"><img src="<?php bloginfo('template_directory'); ?>/images/img-toggle.png" /></span></a></span>
+		<span id="menu-main-title"><a href="#">MENU<span class="icon"><img src="<?php bloginfo('template_directory'); ?>/images/img-toggle.png" /></span></a></span>
 		
 			<?php wp_nav_menu( array(
 				'theme_location' => 'main_menu' ,
